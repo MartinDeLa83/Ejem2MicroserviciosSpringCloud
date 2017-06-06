@@ -1,0 +1,18 @@
+# Control the InternalResourceViewResolver:
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/vistas/
+      suffix: .jsp
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 3333
+
+      
