@@ -1,0 +1,18 @@
+#Configuración de mongo
+#Configuración del nombre del microservicio
+spring:
+  data:
+    mongodb:
+      database: springbootMongo
+      host: localhost
+      port: 27017
+      
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 2222
